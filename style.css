@@ -1,7 +1,8 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: sans-serif,'Poppins';
+    font-family: 'roboto','Poppins';
+    font-weight: 500;
     box-sizing: border-box;
 }
 body{
