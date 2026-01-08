@@ -9,10 +9,15 @@ function generateQr(){
       setTimeout(()=>{
          qrText.classList.add("shake");
          qrText.style.border="3px solid red";
-      },2000)
+      },300)
       setTimeout(() => {
         qrText.classList.remove("shake"); 
          qrText.style.border="2px solid #494eea";
-      }, 3000);
+        let utterance = new SpeechSynthesisUtterance("chla ja boshdike,nikal lavde");
+        utterance.lang = "hi-IN";   // Hindi
+        utterance.rate = 1;         // normal speed
+        utterance.pitch = 1;        // normal pitch
+        speechSynthesis.speak(utterance);
+      }, 1000);
    }
 }
